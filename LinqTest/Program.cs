@@ -9,7 +9,7 @@
                 numbers.Add(i);
             IEnumerable<int> firstAndLastFive = numbers.Take(5).Concat(numbers.TakeLast(6));
             foreach (int i in firstAndLastFive)
-                Console.Write($"{i} ");
+                Console.Write($"{i}");
         }
     }
 }
