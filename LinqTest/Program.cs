@@ -11,16 +11,24 @@
             //foreach (int i in numbers)
             //    Console.Write($"{Enumerable.Range(0, 6).Average()} ");
 
-            int[] values = new[] { 0, 12, 44, 36, 92, 54, 13, 8 };
-            IEnumerable<int> result =
-                from v in values
-                where v < 37
-                orderby -v
-                select v;
+            //int[] values = new[] { 0, 12, 44, 36, 92, 54, 13, 8 };
+            //IEnumerable<int> result =
+            //    from v in values
+            //    where v < 37
+            //    orderby -v
+            //    select v;
 
-            foreach (int v in result)
-                Console.Write($"{v} ");
-            Console.ReadLine();
+            //foreach (int v in result)
+            //    Console.Write($"{v} ");
+            //Console.ReadLine();
+
+            AddSubtract a = new AddSubtract() { Value = 5 }
+            .Add(5)
+            .Subtract(3)
+            .Add(9)
+            .Subtract(12);
+            Console.WriteLine($"Result: {a.Value}");
+
         }
     }
 }
